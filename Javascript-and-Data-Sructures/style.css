@@ -1,0 +1,24 @@
+#results {
+	box-sizing: border-box;
+	margin: 0;
+
+	font-family: "calibri light", "arial narrow";
+	text-align: center;
+}
+
+.result-div {
+	border: 5px solid pink;
+	padding: 25px 0;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+hr {
+	margin: 25px;
+	border: 0.5px solid gray;
+}
+ 

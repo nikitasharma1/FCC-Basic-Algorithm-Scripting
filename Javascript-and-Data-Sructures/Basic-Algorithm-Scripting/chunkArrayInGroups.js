@@ -1,19 +1,27 @@
 "use strict";
 
 function chunkArrayInGroups(arr, size) {
-	/* Function to split array into groups of same size */
+  /* Function to split array into groups of same size */
 
-	let newArr = arr.slice();
-	let newArr2 = [];
+  let newArr = arr.slice();
+  let newArr2 = [];
 
-	while(newArr.length) {
-		newArr2.push(newArr.splice(0, size));
-	}
+  while (newArr.length) {
+    newArr2.push(newArr.splice(0, size));
+  }
 
-	// console.log(newArr); //test output
-	document.write(`<span class="bold">${ JSON.stringify(arr) }</span>, Size: <span class="bold">${ size }</span>, Result: <span class="bold">${ JSON.stringify(newArr2) }</span><br>`); //test output
-	
-	return newArr2;
+  // console.log(newArr); //test output
+  document.write(
+    `<span class="bold">${
+    	JSON.stringify(arr)
+    }</span>, Size: <span class="bold">${
+    	size
+    }</span>, Result: <span class="bold">${
+    	JSON.stringify(newArr2)
+    }</span><br>`
+  ); //test output
+
+  return newArr2;
 }
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2); //should return [["a", "b"], ["c", "d"]].
